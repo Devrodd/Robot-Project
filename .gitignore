@@ -7,11 +7,7 @@ __pycache__/
 .env
 
 # Robot output
-results/
-output.xml
-log.html
-report.html
-*.log
+
 
 # IDEs / SO
 .vscode/

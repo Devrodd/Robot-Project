@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-21T02:30:52.131336" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rodrigo Dantas\robot-project\tests">
+<suite id="s1-s1" name="Faker" source="C:\Users\Rodrigo Dantas\robot-project\tests\faker.robot">
+<test id="s1-s1-t1" name="Gerar Dados Falsos" line="5">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2025-09-21T02:30:52.324577" level="INFO">${nome} = Charles Schneider</msg>
+<var>${nome}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2025-09-21T02:30:52.323867" elapsed="0.000762"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-21T02:30:52.325198" level="INFO">Nome gerado: Charles Schneider</msg>
+<arg>Nome gerado: ${nome}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-21T02:30:52.325001" elapsed="0.000255"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-09-21T02:30:52.325985" level="INFO">${email} = lauragonzalez@example.net</msg>
+<var>${email}</var>
+<status status="PASS" start="2025-09-21T02:30:52.325446" elapsed="0.000556"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-21T02:30:52.326218" level="INFO">Email gerado: lauragonzalez@example.net</msg>
+<arg>Email gerado: ${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-21T02:30:52.326117" elapsed="0.000126"/>
+</kw>
+<status status="PASS" start="2025-09-21T02:30:52.322891" elapsed="0.003460"/>
+</test>
+<status status="PASS" start="2025-09-21T02:30:52.148789" elapsed="0.178010"/>
+</suite>
+<suite id="s1-s2" name="Homepage" source="C:\Users\Rodrigo Dantas\robot-project\tests\homepage.robot">
+<test id="s1-s2-t1" name="Abrir Página Inicial" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-21T02:30:52.464816" level="INFO">Opening browser 'chrome' to base url 'https://certiqa-qazando.com/'.</msg>
+<arg>${URL_BASE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-21T02:30:52.464632" elapsed="2.446927"/>
+</kw>
+<kw name="Title Should Contain">
+<msg time="2025-09-21T02:30:54.912987" level="FAIL">No keyword with name 'Title Should Contain' found. Did you mean:
+    SeleniumLibrary.Table Should Contain</msg>
+<arg>CertiQA Academy</arg>
+<status status="FAIL" start="2025-09-21T02:30:54.912919" elapsed="0.000121">No keyword with name 'Title Should Contain' found. Did you mean:
+    SeleniumLibrary.Table Should Contain</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-09-21T02:30:54.913287" elapsed="0.000029"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-21T02:30:54.913449" elapsed="0.000023"/>
+</kw>
+<status status="FAIL" start="2025-09-21T02:30:52.464173" elapsed="2.449485">No keyword with name 'Title Should Contain' found. Did you mean:
+    SeleniumLibrary.Table Should Contain</status>
+</test>
+<status status="FAIL" start="2025-09-21T02:30:52.327244" elapsed="2.586825"/>
+</suite>
+<status status="FAIL" start="2025-09-21T02:30:52.132259" elapsed="2.782370"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
+<stat name="Faker" id="s1-s1" pass="1" fail="0" skip="0">Tests.Faker</stat>
+<stat name="Homepage" id="s1-s2" pass="0" fail="1" skip="0">Tests.Homepage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
