@@ -1,0 +1,24 @@
+# Python / Robot Framework
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Robot output
+results/
+output.xml
+log.html
+report.html
+*.log
+
+# IDEs / SO
+.vscode/
+.idea/
+.DS_Store
+
+# Drivers (se você decidir baixar manualmente)
+chromedriver.exe
+msedgedriver.exe
+geckodriver.exe
